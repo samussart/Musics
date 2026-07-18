@@ -3,23 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Groovy Player</title>
+<title>Neon Player</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Space+Mono:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg: #F6EEFB;
-    --bg-2: #ECDFF7;
-    --bg-3: #E1CDF2;
-    --ink: #4A3565;
-    --ink-soft: #7C6294;
-    --accent: #B98FE0;
-    --accent-2: #E3B6DE;
-    --accent-3: #8F6BC4;
-    --record: #6E5089;
-    --record-dark: #5A4070;
-    --cream: #FBF6FF;
+    /* base solicitada + análogas (roxo -> azul-violeta -> rosa-violeta) */
+    --base: #DAC4F7;
+    --analog-blue: #C4CFF7;
+    --analog-pink: #F7C4E4;
+
+    --bg: #0A0714;
+    --bg-2: #130B22;
+    --bg-3: #1C1130;
+    --card: #170F28;
+    --card-edge: #33224E;
+
+    --neon-purple: #B266FF;
+    --neon-pink: #FF4FD8;
+    --neon-blue: #4FE0FF;
+
+    --ink: #F4ECFF;
+    --ink-soft: #B6A6DA;
+
+    --glow-purple: rgba(178,102,255,0.55);
+    --glow-pink: rgba(255,79,216,0.5);
+    --glow-blue: rgba(79,224,255,0.45);
   }
 
   * { box-sizing: border-box; }
@@ -28,7 +38,7 @@
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     min-height: 100vh;
   }
 
@@ -37,95 +47,82 @@
     overflow-x: hidden;
     display: flex;
     justify-content: center;
-    padding: 44px 18px 70px;
+    padding: 30px 16px 70px;
   }
 
-  /* ---- groovy swirl background ---- */
-  .swirl {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    overflow: hidden;
-  }
-  .blob {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(50px);
-    opacity: 0.55;
-    animation: drift 26s ease-in-out infinite;
-  }
-  .blob.b1 { width: 420px; height: 420px; background: var(--accent); top: -120px; left: -100px; animation-duration: 30s; }
-  .blob.b2 { width: 380px; height: 380px; background: var(--accent-2); bottom: -140px; right: -90px; animation-duration: 34s; animation-delay: -6s; }
-  .blob.b3 { width: 300px; height: 300px; background: var(--bg-3); top: 40%; left: 60%; animation-duration: 22s; animation-delay: -12s; }
+  /* ===== fundo cyber: estrelas + grade retrô + glow ===== */
+  .cyber-bg { position: fixed; inset: 0; z-index: -3; overflow: hidden; background: var(--bg); }
 
-  @keyframes drift {
-    0%, 100% { transform: translate(0,0) scale(1); }
-    33% { transform: translate(30px,-25px) scale(1.08); }
-    66% { transform: translate(-20px,20px) scale(0.95); }
+  .glow-orb { position: absolute; border-radius: 50%; filter: blur(70px); opacity: 0.45; }
+  .glow-orb.o1 { width: 380px; height: 380px; background: var(--neon-purple); top: -140px; left: -80px; }
+  .glow-orb.o2 { width: 340px; height: 340px; background: var(--neon-pink); top: 10%; right: -120px; }
+  .glow-orb.o3 { width: 300px; height: 300px; background: var(--neon-blue); bottom: -100px; left: 10%; }
+
+  .stars { position: absolute; inset: 0; }
+  .star {
+    position: absolute; border-radius: 50%;
+    background: var(--ink);
+    animation: twinkle 3.5s ease-in-out infinite;
   }
+  @keyframes twinkle { 0%,100% { opacity: 0.25; } 50% { opacity: 1; } }
+
+  .grid-floor {
+    position: absolute; left: -25%; right: -25%; bottom: -8%; height: 46%;
+    background-image:
+      linear-gradient(var(--neon-purple) 1px, transparent 1px),
+      linear-gradient(90deg, var(--neon-purple) 1px, transparent 1px);
+    background-size: 46px 46px;
+    transform: perspective(280px) rotateX(62deg);
+    transform-origin: bottom;
+    opacity: 0.35;
+    mask-image: linear-gradient(to top, black, transparent);
+    -webkit-mask-image: linear-gradient(to top, black, transparent);
+  }
+  .horizon-glow {
+    position: absolute; left: 0; right: 0; bottom: 42%; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--neon-pink), var(--neon-purple), var(--neon-blue), transparent);
+    box-shadow: 0 0 24px 4px var(--glow-pink);
+    opacity: 0.7;
+  }
+
   @media (prefers-reduced-motion: reduce){
-    .blob { animation: none; }
+    .star { animation: none; }
   }
 
-  .wrap { width: 100%; max-width: 460px; }
+  .wrap { width: 100%; max-width: 460px; position: relative; z-index: 1; }
 
-  .eyebrow {
-    text-align: center;
-    font-family: 'Space Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--accent-3);
-    margin-bottom: 8px;
-  }
-
-  h1 {
-    font-family: 'Bagel Fat One', cursive;
-    font-weight: 400;
-    text-align: center;
-    font-size: clamp(32px, 8vw, 44px);
-    color: var(--ink);
-    margin: 0 0 6px;
-    letter-spacing: 0.01em;
-  }
-
-  .sub {
-    text-align: center;
-    font-size: 13px;
-    color: var(--ink-soft);
-    margin-bottom: 30px;
-  }
-
-  /* ---- wavy divider signature ---- */
-  .wave-divider {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 22px 0 14px;
-  }
-  .wave-divider svg { flex: 1; height: 10px; width: 100%; }
-  .wave-divider span {
-    font-family: 'Space Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    white-space: nowrap;
-  }
-
-  /* ---- deck card ---- */
+  /* ===== card principal ===== */
   .deck {
-    background: var(--cream);
-    border: 2px solid var(--bg-3);
-    border-radius: 28px;
-    padding: 30px 24px 22px;
-    box-shadow: 0 24px 50px -28px rgba(110, 80, 140, 0.45);
+    background: linear-gradient(180deg, var(--card), var(--bg-2));
+    border: 1px solid var(--card-edge);
+    border-radius: 26px;
+    padding: 30px 22px 22px;
+    box-shadow:
+      0 0 0 1px rgba(178,102,255,0.08),
+      0 0 40px -6px var(--glow-purple),
+      0 30px 60px -30px rgba(0,0,0,0.8);
   }
 
-  .player { position: relative; width: 230px; height: 230px; margin: 0 auto 18px; }
+  /* ===== vinil ===== */
+  .player { position: relative; width: 246px; height: 246px; margin: 4px auto 14px; }
+
+  .holo-ring {
+    position: absolute; inset: -8px; border-radius: 50%;
+    background: conic-gradient(from 0deg,
+      var(--neon-purple), var(--neon-blue), var(--neon-pink), var(--base), var(--neon-purple));
+    filter: blur(0.4px);
+    animation: holoSpin 6s linear infinite;
+    box-shadow: 0 0 26px 2px var(--glow-purple), 0 0 46px 6px var(--glow-pink);
+  }
+  .holo-ring::after {
+    content: ""; position: absolute; inset: 6px; border-radius: 50%;
+    background: var(--bg-2);
+  }
+  @keyframes holoSpin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce){ .holo-ring { animation: none; } }
 
   .record-spin {
-    width: 100%; height: 100%;
+    position: relative; width: 100%; height: 100%;
     transform-origin: 50% 50%;
     animation: spin 3s linear infinite;
     animation-play-state: paused;
@@ -134,24 +131,33 @@
   @media (prefers-reduced-motion: reduce){ .record-spin { animation: none !important; } }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  .tonearm-group { transform-origin: 200px 30px; transition: transform 0.6s cubic-bezier(.65,0,.35,1); }
+  .tonearm-group { transform-origin: 216px 32px; transition: transform 0.6s cubic-bezier(.65,0,.35,1); }
 
-  .label-title { font-family: 'Space Mono', monospace; font-size: 8.5px; fill: var(--cream); text-anchor: middle; letter-spacing: 0.06em; }
+  .spin-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 8.6px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    fill: var(--ink);
+  }
 
-  .track-info { text-align: center; margin-bottom: 6px; }
-  .track-title { font-family: 'Bagel Fat One', cursive; font-size: 19px; color: var(--ink); line-height: 1.25; }
-  .track-artist { font-size: 12px; color: var(--ink-soft); margin-top: 2px; }
+  .track-info { text-align: center; margin-bottom: 4px; }
+  .track-artist { font-family: 'Rajdhani', sans-serif; font-size: 14px; font-weight: 600; color: var(--ink-soft); letter-spacing: 0.03em; }
+  .player-status { font-size: 11px; color: var(--neon-blue); margin-top: 6px; min-height: 14px; font-family: 'Orbitron', sans-serif; letter-spacing: 0.03em; }
+  .player-status.err { color: var(--neon-pink); }
 
+  /* ===== progresso ===== */
   .progress-row {
-    display: flex; align-items: center; gap: 8px;
-    margin: 14px 0 20px;
-    font-family: 'Space Mono', monospace;
+    display: flex; align-items: center; gap: 10px;
+    margin: 16px 0 20px;
+    font-family: 'Orbitron', sans-serif;
     font-size: 10px;
     color: var(--ink-soft);
   }
   .progress-bar {
-    flex: 1; height: 8px;
-    background: var(--bg-2);
+    flex: 1; height: 7px;
+    background: var(--bg-3);
+    border: 1px solid var(--card-edge);
     border-radius: 999px;
     position: relative;
     cursor: pointer;
@@ -160,147 +166,198 @@
   .progress-fill {
     position: absolute; left:0; top:0; bottom:0;
     width: 0%;
-    background: linear-gradient(90deg, var(--accent-3), var(--accent));
+    background: linear-gradient(90deg, var(--neon-purple), var(--neon-pink), var(--neon-blue));
+    box-shadow: 0 0 12px 1px var(--glow-pink);
     border-radius: 999px;
   }
 
+  /* ===== transporte ===== */
   .transport {
     display: flex; align-items: center; justify-content: center;
-    gap: 14px; margin-bottom: 20px;
+    gap: 14px; margin-bottom: 22px;
   }
 
-  button { cursor: pointer; border: none; font-family: 'Poppins', sans-serif; transition: transform .12s ease, background .15s ease, color .15s ease, border-color .15s ease; }
-  button:active { transform: scale(0.94); }
-  button:focus-visible { outline: 2px solid var(--accent-3); outline-offset: 2px; }
+  button { cursor: pointer; border: none; font-family: 'Rajdhani', sans-serif; transition: transform .12s ease, box-shadow .2s ease, color .15s ease, background .2s ease; }
+  button:active { transform: scale(0.93); }
+  button:focus-visible { outline: 2px solid var(--neon-blue); outline-offset: 2px; }
 
   .icon-btn {
-    width: 42px; height: 42px; border-radius: 50%;
-    background: var(--bg-2); color: var(--ink);
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--bg-3); color: var(--ink-soft);
+    border: 1px solid var(--card-edge);
     display: flex; align-items: center; justify-content: center;
     font-size: 16px;
   }
-  .icon-btn:hover { background: var(--bg-3); }
-  .icon-btn.toggle-active { background: var(--accent); color: #fff; }
+  .icon-btn:hover { color: var(--ink); border-color: var(--neon-purple); box-shadow: 0 0 14px -2px var(--glow-purple); }
+  .icon-btn.toggle-active {
+    color: var(--bg);
+    background: linear-gradient(135deg, var(--neon-pink), var(--neon-purple));
+    border-color: transparent;
+    box-shadow: 0 0 16px 0 var(--glow-pink);
+  }
 
   .play-btn {
-    width: 66px; height: 66px; border-radius: 50%;
-    background: radial-gradient(circle at 35% 30%, var(--accent-2), var(--accent) 75%);
-    color: #fff; font-size: 20px;
-    box-shadow: 0 10px 22px -8px rgba(185, 143, 224, 0.7);
+    width: 70px; height: 70px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, var(--neon-blue), var(--neon-purple) 70%);
+    color: #0A0714; font-size: 20px;
+    box-shadow: 0 0 22px 2px var(--glow-purple), 0 0 40px 4px var(--glow-blue);
+  }
+  .play-btn.playing-pulse { animation: pulseGlow 1.6s ease-in-out infinite; }
+  @keyframes pulseGlow {
+    0%,100% { box-shadow: 0 0 22px 2px var(--glow-purple), 0 0 40px 4px var(--glow-blue); }
+    50% { box-shadow: 0 0 34px 6px var(--glow-pink), 0 0 60px 10px var(--glow-purple); }
   }
 
-  .row-label {
-    font-family: 'Space Mono', monospace;
-    font-size: 9px; letter-spacing: 0.14em; color: var(--ink-soft);
-    text-align: center; margin-bottom: 8px; text-transform: uppercase;
-  }
-
-  .pills {
-    display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 6px;
-  }
-  .pill {
-    padding: 7px 14px; border-radius: 999px;
-    background: var(--bg-2); color: var(--ink-soft);
-    font-size: 11px; border: 2px solid transparent;
-  }
-  .pill:hover { border-color: var(--accent-2); }
-  .pill.active { background: var(--accent); color: #fff; }
-
-  .volume-row { display: flex; align-items: center; gap: 10px; margin: 18px 0 4px; }
-  .volume-row span { font-size: 13px; }
+  .volume-row { display: flex; align-items: center; gap: 10px; margin: 20px 0 4px; }
+  .volume-row span { font-size: 15px; filter: drop-shadow(0 0 4px var(--glow-blue)); }
   input[type="range"] {
     -webkit-appearance: none; appearance: none;
     flex: 1; height: 6px; border-radius: 999px;
-    background: var(--bg-2); outline: none;
+    background: linear-gradient(90deg, var(--neon-purple), var(--neon-blue));
+    outline: none;
   }
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none; width: 15px; height: 15px; border-radius: 50%;
-    background: var(--accent); cursor: pointer; border: 2px solid var(--cream);
+    background: var(--ink); cursor: pointer; border: 2px solid var(--neon-purple);
+    box-shadow: 0 0 8px 1px var(--glow-purple);
   }
   input[type="range"]::-moz-range-thumb {
     width: 15px; height: 15px; border-radius: 50%;
-    background: var(--accent); cursor: pointer; border: 2px solid var(--cream);
+    background: var(--ink); cursor: pointer; border: 2px solid var(--neon-purple);
+    box-shadow: 0 0 8px 1px var(--glow-purple);
   }
 
+  /* ===== divisores ===== */
+  .section-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--neon-blue);
+    text-shadow: 0 0 8px var(--glow-blue);
+    margin: 20px 0 10px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--card-edge), transparent); }
+
+  /* ===== pills ===== */
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
+  .pill {
+    padding: 7px 14px; border-radius: 999px;
+    background: var(--bg-3); color: var(--ink-soft);
+    font-family: 'Rajdhani', sans-serif; font-weight: 600;
+    font-size: 12px; border: 1px solid var(--card-edge);
+  }
+  .pill:hover { border-color: var(--neon-blue); color: var(--ink); }
+  .pill.active {
+    color: var(--bg);
+    background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+    border-color: transparent;
+    box-shadow: 0 0 14px -2px var(--glow-purple);
+  }
+
+  /* ===== playlist em cards com glow ===== */
   .track-list {
-    max-height: 260px; overflow-y: auto;
+    max-height: 300px; overflow-y: auto;
     margin-top: 6px;
-    border-radius: 14px;
-    background: var(--bg-2);
-    padding: 6px;
+    display: flex; flex-direction: column; gap: 7px;
+    padding: 2px 2px 2px 0;
   }
   .track-list::-webkit-scrollbar { width: 6px; }
-  .track-list::-webkit-scrollbar-thumb { background: var(--accent-2); border-radius: 4px; }
+  .track-list::-webkit-scrollbar-thumb { background: var(--neon-purple); border-radius: 4px; }
 
   .track-item {
     display: flex; align-items: center; gap: 10px;
-    padding: 9px 10px; border-radius: 10px;
-    cursor: pointer; font-size: 12.5px;
+    padding: 10px 12px; border-radius: 12px;
+    cursor: pointer; font-size: 13px;
+    background: var(--bg-3);
+    border: 1px solid var(--card-edge);
+    transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
   }
-  .track-item:hover { background: var(--bg-3); }
-  .track-item.playing { background: var(--accent); color: #fff; }
-  .track-item .n { font-family: 'Space Mono', monospace; font-size: 10px; color: var(--ink-soft); width: 18px; }
-  .track-item.playing .n { color: rgba(255,255,255,0.8); }
+  .track-item:hover { border-color: var(--neon-blue); box-shadow: 0 0 14px -4px var(--glow-blue); }
+  .track-item.playing {
+    background: linear-gradient(135deg, rgba(178,102,255,0.18), rgba(255,79,216,0.14));
+    border-color: var(--neon-pink);
+    box-shadow: 0 0 18px -2px var(--glow-pink);
+  }
+  .track-item.broken { opacity: 0.5; }
+  .track-item.broken .t::after { content: " ⚠"; }
+  .track-item .n { font-family: 'Orbitron', sans-serif; font-size: 10px; color: var(--ink-soft); width: 18px; }
+  .track-item.playing .n { color: var(--neon-pink); }
   .track-item .meta { flex: 1; min-width: 0; }
-  .track-item .meta .t { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .track-item .meta .a { font-size: 10.5px; opacity: 0.75; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .track-item .meta .t { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--ink); }
+  .track-item .meta .a { font-size: 11px; color: var(--ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
   .empty-note {
     text-align: center; font-size: 12px; color: var(--ink-soft);
     padding: 20px 10px; line-height: 1.6;
+    font-family: 'Rajdhani', sans-serif;
   }
-  .empty-note code { background: var(--bg-3); padding: 1px 5px; border-radius: 5px; }
+  .empty-note code { background: var(--bg-3); padding: 1px 5px; border-radius: 5px; color: var(--neon-blue); }
 
   footer {
     text-align: center; font-size: 10px; color: var(--ink-soft);
-    margin-top: 18px; letter-spacing: 0.04em; opacity: 0.8;
+    margin-top: 18px; letter-spacing: 0.05em; opacity: 0.6;
+    font-family: 'Orbitron', sans-serif;
   }
 </style>
 </head>
 <body>
 
-<div class="swirl">
-  <div class="blob b1"></div>
-  <div class="blob b2"></div>
-  <div class="blob b3"></div>
+<div class="cyber-bg">
+  <div class="glow-orb o1"></div>
+  <div class="glow-orb o2"></div>
+  <div class="glow-orb o3"></div>
+  <div class="stars" id="stars"></div>
+  <div class="horizon-glow"></div>
+  <div class="grid-floor"></div>
 </div>
 
 <div class="wrap">
-  <div class="eyebrow">seu acervo, do seu jeito</div>
-  <h1>groovy player</h1>
-  <div class="sub">toca as suas músicas direto do repositório</div>
-
   <div class="deck">
 
     <div class="player">
-      <svg viewBox="0 0 230 230" width="230" height="230">
-        <g class="record-spin" id="recordSpin">
-          <circle cx="115" cy="115" r="104" fill="var(--record)"/>
-          <g stroke="var(--record-dark)" fill="none" stroke-width="0.7" opacity="0.8">
-            <circle cx="115" cy="115" r="95"/>
-            <circle cx="115" cy="115" r="86"/>
-            <circle cx="115" cy="115" r="77"/>
-            <circle cx="115" cy="115" r="68"/>
-            <circle cx="115" cy="115" r="59"/>
-          </g>
-          <circle cx="115" cy="115" r="40" fill="var(--accent-2)"/>
-          <circle cx="115" cy="115" r="40" fill="none" stroke="#ffffff40" stroke-width="1"/>
-          <text x="115" y="112" class="label-title" id="labelTitle" style="fill:var(--ink);">♪ ♪ ♪</text>
-          <text x="115" y="124" class="label-title" style="fill:var(--ink); opacity:0.7; font-size:7px;">GROOVY PLAYER</text>
-          <circle cx="115" cy="115" r="3.5" fill="var(--cream)"/>
+      <div class="holo-ring"></div>
+      <svg class="record-spin" id="recordSpin" viewBox="0 0 246 246" width="246" height="246">
+        <defs>
+          <radialGradient id="vinylBody" cx="42%" cy="38%" r="75%">
+            <stop offset="0%" stop-color="#3A2A56"/>
+            <stop offset="55%" stop-color="#180F28"/>
+            <stop offset="100%" stop-color="#0B0714"/>
+          </radialGradient>
+          <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+            <stop offset="35%" stop-color="#ffffff" stop-opacity="0"/>
+          </linearGradient>
+          <path id="labelCircle" fill="none" d="M 123,84 A 39,39 0 1 1 122.9,84"/>
+        </defs>
+
+        <circle cx="123" cy="123" r="111" fill="url(#vinylBody)" stroke="#33224E" stroke-width="1"/>
+        <g stroke="#2A1C42" fill="none" stroke-width="0.7" opacity="0.85">
+          <circle cx="123" cy="123" r="101"/>
+          <circle cx="123" cy="123" r="91"/>
+          <circle cx="123" cy="123" r="81"/>
+          <circle cx="123" cy="123" r="71"/>
+          <circle cx="123" cy="123" r="61"/>
         </g>
-        <g class="tonearm-group" id="tonearm">
-          <circle cx="200" cy="30" r="9" fill="var(--ink-soft)"/>
-          <circle cx="200" cy="30" r="3.5" fill="var(--bg-2)"/>
-          <line x1="200" y1="30" x2="132" y2="70" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
-          <rect x="122" y="64" width="16" height="9" rx="2" fill="var(--accent-3)" transform="rotate(28 132 70)"/>
-        </g>
+        <ellipse cx="90" cy="80" rx="70" ry="34" fill="url(#sheen)" transform="rotate(-28 90 80)"/>
+
+        <circle cx="123" cy="123" r="39" fill="#150C24" stroke="var(--neon-purple)" stroke-width="1.4"/>
+        <text class="spin-title">
+          <textPath id="spinTitlePath" href="#labelCircle" startOffset="0">· SEM FAIXA CARREGADA ·</textPath>
+        </text>
+        <circle cx="123" cy="123" r="4" fill="var(--ink)"/>
+      </svg>
+
+      <svg class="tonearm-group" id="tonearm" viewBox="0 0 246 246" width="246" height="246" style="position:absolute; top:0; left:0; pointer-events:none;">
+        <circle cx="216" cy="32" r="9" fill="#B6A6DA"/>
+        <circle cx="216" cy="32" r="3.5" fill="#170F28"/>
+        <line x1="216" y1="32" x2="144" y2="75" stroke="var(--neon-blue)" stroke-width="3" stroke-linecap="round"/>
+        <rect x="134" y="69" width="16" height="9" rx="2" fill="var(--neon-pink)" transform="rotate(28 144 75)"/>
       </svg>
     </div>
 
     <div class="track-info">
-      <div class="track-title" id="trackTitle">nenhuma faixa carregada</div>
       <div class="track-artist" id="trackArtist">adicione músicas para começar</div>
+      <div class="player-status" id="playerStatus"></div>
     </div>
 
     <div class="progress-row">
@@ -314,7 +371,7 @@
       <button class="icon-btn" id="prevBtn" title="Faixa anterior">⏮</button>
       <button class="play-btn" id="playBtn" title="Tocar / Pausar">▶</button>
       <button class="icon-btn" id="nextBtn" title="Próxima faixa">⏭</button>
-      <button class="icon-btn" id="repeatBtn" title="Repetir lista" aria-pressed="true">🔁</button>
+      <button class="icon-btn toggle-active" id="repeatBtn" title="Repetir lista" aria-pressed="true">🔁</button>
     </div>
 
     <div class="volume-row">
@@ -322,34 +379,44 @@
       <input type="range" id="volumeSlider" min="0" max="100" value="70">
     </div>
 
-    <div class="wave-divider">
-      <span>listas</span>
-      <svg viewBox="0 0 200 10" preserveAspectRatio="none"><path d="M0,5 Q5,0 10,5 T20,5 T30,5 T40,5 T50,5 T60,5 T70,5 T80,5 T90,5 T100,5 T110,5 T120,5 T130,5 T140,5 T150,5 T160,5 T170,5 T180,5 T190,5 T200,5" fill="none" stroke="var(--accent-2)" stroke-width="2"/></svg>
-    </div>
+    <div class="section-label">listas</div>
     <div class="pills" id="playlistPills"></div>
 
-    <div class="wave-divider">
-      <span>faixas</span>
-      <svg viewBox="0 0 200 10" preserveAspectRatio="none"><path d="M0,5 Q5,0 10,5 T20,5 T30,5 T40,5 T50,5 T60,5 T70,5 T80,5 T90,5 T100,5 T110,5 T120,5 T130,5 T140,5 T150,5 T160,5 T170,5 T180,5 T190,5 T200,5" fill="none" stroke="var(--accent-2)" stroke-width="2"/></svg>
-    </div>
+    <div class="section-label">faixas</div>
     <div class="track-list" id="trackList">
       <div class="empty-note">carregando <code>playlists.json</code>...</div>
     </div>
 
   </div>
 
-  <footer>arquivos ficam salvos no seu repositório do GitHub · acesse de qualquer computador</footer>
+  
 </div>
 
 <audio id="audio" preload="metadata"></audio>
 
 <script>
 (function(){
+  // ---- estrelas de fundo ----
+  const starsEl = document.getElementById('stars');
+  const STAR_COUNT = 60;
+  for (let i = 0; i < STAR_COUNT; i++){
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = (Math.random() * 2 + 0.6).toFixed(1);
+    s.style.width = size + 'px';
+    s.style.height = size + 'px';
+    s.style.left = (Math.random() * 100) + '%';
+    s.style.top = (Math.random() * 100) + '%';
+    s.style.animationDelay = (Math.random() * 3.5).toFixed(2) + 's';
+    s.style.boxShadow = '0 0 ' + (size * 2) + 'px rgba(244,236,255,0.8)';
+    starsEl.appendChild(s);
+  }
+
   const els = {
     audio: document.getElementById('audio'),
     record: document.getElementById('recordSpin'),
     tonearm: document.getElementById('tonearm'),
-    title: document.getElementById('trackTitle'),
+    spinTitle: document.getElementById('spinTitlePath'),
     artist: document.getElementById('trackArtist'),
     curTime: document.getElementById('curTime'),
     durTime: document.getElementById('durTime'),
@@ -362,15 +429,16 @@
     repeatBtn: document.getElementById('repeatBtn'),
     volume: document.getElementById('volumeSlider'),
     pills: document.getElementById('playlistPills'),
-    trackList: document.getElementById('trackList')
+    trackList: document.getElementById('trackList'),
+    playerStatus: document.getElementById('playerStatus')
   };
 
   const PARK_ANGLE = -16, END_ANGLE = 16;
 
-  let allTracks = [];       // [{arquivo, titulo, artista}]
-  let listas = {};          // { "Nome da lista": [arquivo, ...] }
+  let allTracks = [];
+  let listas = {};
   let currentListName = 'Todas';
-  let queue = [];           // array of track objects in play order
+  let queue = [];
   let queueIndex = -1;
   let shuffle = false;
   let repeatAll = true;
@@ -436,7 +504,7 @@
     }
     tracks.forEach((t, i) => {
       const item = document.createElement('div');
-      item.className = 'track-item';
+      item.className = 'track-item' + (brokenTracks.has(t.arquivo) ? ' broken' : '');
       item.dataset.arquivo = t.arquivo;
       item.innerHTML =
         '<span class="n">' + String(i+1).padStart(2,'0') + '</span>' +
@@ -473,14 +541,103 @@
     }
   }
 
+  let candidateUrls = [];
+  let candidateIndex = 0;
+  let stuckTimer = null;
+  const brokenTracks = new Set();
+  const STUCK_TIMEOUT_MS = 7000;
+
+  // watchdog para travas NO MEIO da reprodução (a faixa começa mas o tempo para de avançar)
+  let lastProgressAt = 0;
+  let lastProgressTime = 0;
+  let stallRetries = 0;
+  let hasStartedPlaying = false;
+  const STALL_CHECK_MS = 3000;
+  const STALL_LIMIT_MS = 6000;
+  const STALL_MAX_RETRIES = 2;
+
+  setInterval(() => {
+    if (!hasStartedPlaying || els.audio.paused || els.audio.ended || queueIndex < 0) return;
+    const now = Date.now();
+    const cur = els.audio.currentTime;
+    if (cur !== lastProgressTime){
+      lastProgressTime = cur;
+      lastProgressAt = now;
+      stallRetries = 0;
+      return;
+    }
+    if (now - lastProgressAt > STALL_LIMIT_MS){
+      const t = queue[queueIndex];
+      if (!t) return;
+      stallRetries++;
+      if (stallRetries > STALL_MAX_RETRIES){
+        setStatus('"' + (t.titulo || t.arquivo) + '" travou e não recuperou — pulando', true);
+        brokenTracks.add(t.arquivo);
+        renderTrackList(tracksForList(currentListName));
+        lastProgressAt = now;
+        setTimeout(nextTrack, 1200);
+      } else {
+        setStatus('a faixa travou, tentando recuperar...', true);
+        const resumeAt = cur;
+        els.audio.load();
+        els.audio.currentTime = resumeAt;
+        els.audio.play().catch(() => {});
+        lastProgressAt = now;
+      }
+    }
+  }, STALL_CHECK_MS);
+
+  function urlCandidates(arquivo){
+    const forms = [arquivo, arquivo.normalize('NFC'), arquivo.normalize('NFD')];
+    const unique = [...new Set(forms)];
+    return unique.map(f => encodeURI('./musicas/' + f));
+  }
+
+  function setStatus(msg, isError){
+    els.playerStatus.textContent = msg || '';
+    els.playerStatus.classList.toggle('err', !!isError);
+  }
+
+  function setSpinTitle(text){
+    const clean = (text || 'SEM FAIXA').toUpperCase();
+    els.spinTitle.textContent = '· ' + clean + ' · ' + clean + ' ';
+  }
+
   function playCurrent(){
     if (queueIndex < 0 || queueIndex >= queue.length) return;
     const t = queue[queueIndex];
-    els.audio.src = './musicas/' + t.arquivo;
-    els.title.textContent = t.titulo || t.arquivo;
+    setSpinTitle(t.titulo || t.arquivo);
     els.artist.textContent = t.artista || '';
-    els.audio.play().catch(() => {});
+    setStatus('');
     highlightPlaying(t.arquivo);
+    candidateUrls = urlCandidates(t.arquivo);
+    candidateIndex = 0;
+    lastProgressAt = Date.now();
+    lastProgressTime = 0;
+    stallRetries = 0;
+    hasStartedPlaying = false;
+    attemptLoad();
+  }
+
+  function attemptLoad(){
+    clearTimeout(stuckTimer);
+    const t = queue[queueIndex];
+    if (!t) return;
+    if (candidateIndex >= candidateUrls.length){
+      brokenTracks.add(t.arquivo);
+      renderTrackList(tracksForList(currentListName));
+      setStatus('não foi possível carregar "' + (t.titulo || t.arquivo) + '" — pulando para a próxima', true);
+      setTimeout(nextTrack, 1400);
+      return;
+    }
+    els.audio.src = candidateUrls[candidateIndex];
+    els.audio.play().catch(() => attemptNextCandidate());
+    stuckTimer = setTimeout(attemptNextCandidate, STUCK_TIMEOUT_MS);
+  }
+
+  function attemptNextCandidate(){
+    candidateIndex++;
+    attemptLoad();
   }
 
   function highlightPlaying(arquivo){
@@ -545,12 +702,31 @@
   els.audio.addEventListener('play', () => {
     isPlaying = true;
     els.record.classList.add('playing');
+    els.playBtn.classList.add('playing-pulse');
     els.playBtn.textContent = '❚❚';
+  });
+  els.audio.addEventListener('playing', () => {
+    clearTimeout(stuckTimer);
+    hasStartedPlaying = true;
+    lastProgressAt = Date.now();
+    lastProgressTime = els.audio.currentTime;
+    stallRetries = 0;
+    setStatus('');
+    const t = queue[queueIndex];
+    if (t && brokenTracks.has(t.arquivo)){
+      brokenTracks.delete(t.arquivo);
+      renderTrackList(tracksForList(currentListName));
+      highlightPlaying(t.arquivo);
+    }
   });
   els.audio.addEventListener('pause', () => {
     isPlaying = false;
     els.record.classList.remove('playing');
+    els.playBtn.classList.remove('playing-pulse');
     els.playBtn.textContent = '▶';
+  });
+  els.audio.addEventListener('error', () => {
+    if (queueIndex >= 0) attemptNextCandidate();
   });
   els.audio.addEventListener('ended', nextTrack);
 
