@@ -1,0 +1,821 @@
+{
+  "faixas": [
+    {
+      "arquivo": "MODO TURBO_spotdown.org.mp3",
+      "titulo": "MODO TURBO",
+      "artista": "Luísa Sonza, Pabllo Vittar"
+    },
+    {
+      "arquivo": "MUKANJYO_spotdown.org.mp3",
+      "titulo": "MUKANJYO",
+      "artista": "Survive Said The Prophet"
+    },
+    {
+      "arquivo": "nada contra (ciúme)_spotdown.org.mp3",
+      "titulo": "nada contra (ciúme)",
+      "artista": "Clarissa"
+    },
+    {
+      "arquivo": "Não Fosse Tão Tarde (Speed)_spotdown.org.mp3",
+      "titulo": "Não Fosse Tão Tarde (Speed)",
+      "artista": "Lou Garcia"
+    },
+    {
+      "arquivo": "Não Te Amo_spotdown.org.mp3",
+      "titulo": "Não Te Amo",
+      "artista": "Jão"
+    },
+    {
+      "arquivo": "New Genesis_spotdown.org.mp3",
+      "titulo": "New Genesis",
+      "artista": "Ado"
+    },
+    {
+      "arquivo": "Overdrive (feat. Norma Jean Martine)_spotdown.org.mp3",
+      "titulo": "Overdrive",
+      "artista": "Ofenbach, Norma Jean Martine"
+    },
+    {
+      "arquivo": "PAPERMOON_spotdown.org.mp3",
+      "titulo": "PAPERMOON",
+      "artista": "Tommy heavenly6"
+    },
+    {
+      "arquivo": "penhasco._spotdown.org.mp3",
+      "titulo": "penhasco",
+      "artista": "Luísa Sonza"
+    },
+    {
+      "arquivo": "Physical_spotdown.org.mp3",
+      "titulo": "Physical",
+      "artista": "Dua Lipa"
+    },
+    {
+      "arquivo": "Pupila_spotdown.org.mp3",
+      "titulo": "Pupila",
+      "artista": "ANAVITÓRIA, Vitor Kley"
+    },
+    {
+      "arquivo": "Radio_spotdown.org.mp3",
+      "titulo": "Radio",
+      "artista": "Bershy"
+    },
+    {
+      "arquivo": "ReawakeR (feat. Felix of Stray Kids)_spotdown.org.mp3",
+      "titulo": "ReawakeR",
+      "artista": "LiSA, Felix"
+    },
+    {
+      "arquivo": "Release My Soul_spotdown.org.mp3",
+      "titulo": "Release My Soul",
+      "artista": "Sawano Hiroyuki"
+    },
+    {
+      "arquivo": "Requiem_spotdown.org.mp3",
+      "titulo": "Requiem",
+      "artista": "Tasogare, Amnesia"
+    },
+    {
+      "arquivo": "resonance_spotdown.org.mp3",
+      "titulo": "resonance",
+      "artista": "T.M.Revolution"
+    },
+    {
+      "arquivo": "RISE_spotdown.org.mp3",
+      "titulo": "RISE",
+      "artista": "MADKID"
+    },
+    {
+      "arquivo": "Rising Hope_spotdown.org.mp3",
+      "titulo": "Rising Hope",
+      "artista": "LiSA"
+    },
+    {
+      "arquivo": "Rolling star_spotdown.org.mp3",
+      "titulo": "Rolling star",
+      "artista": "YUI"
+    },
+    {
+      "arquivo": "Rush_spotdown.org.mp3",
+      "titulo": "Rush",
+      "artista": "Troye Sivan"
+    },
+    {
+      "arquivo": "Sagrado Profano_spotdown.org.mp3",
+      "titulo": "Sagrado Profano",
+      "artista": "Luísa Sonza, KayBlack"
+    },
+    {
+      "arquivo": "Santo_spotdown.org.mp3",
+      "titulo": "Santo",
+      "artista": "Jão"
+    },
+    {
+      "arquivo": "Sem Filtro_spotdown.org.mp3",
+      "titulo": "Sem Filtro",
+      "artista": "IZA"
+    },
+    {
+      "arquivo": "Sharp Objects_spotdown.org.mp3",
+      "titulo": "Sharp Objects",
+      "artista": "Sorn"
+    },
+    {
+      "arquivo": "Shivers_spotdown.org.mp3",
+      "titulo": "Shivers",
+      "artista": "Ed Sheeran"
+    },
+    {
+      "arquivo": "Sou Musa do Verão_spotdown.org.mp3",
+      "titulo": "Sou Musa do Verão",
+      "artista": "Marshmello, Luísa Sonza"
+    },
+    {
+      "arquivo": "SPECIALZ_spotdown.org.mp3",
+      "titulo": "SPECIALZ",
+      "artista": "King Gnu"
+    },
+    {
+      "arquivo": "STAY (with Justin Bieber)_spotdown.org.mp3",
+      "titulo": "STAY",
+      "artista": "The Kid LAROI, Justin Bieber"
+    },
+    {
+      "arquivo": "STRIKE BACK_spotdown.org.mp3",
+      "titulo": "STRIKE BACK",
+      "artista": "BACK-ON"
+    },
+    {
+      "arquivo": "STYX HELIX_spotdown.org (1).mp3",
+      "titulo": "STYX HELIX",
+      "artista": "MYTH & ROID"
+    },
+    {
+      "arquivo": "Supernova Love_spotdown.org.mp3",
+      "titulo": "Supernova Love",
+      "artista": "IVE, David Guetta"
+    },
+    {
+      "arquivo": "Suzume_spotdown.org.mp3",
+      "titulo": "Suzume",
+      "artista": "RADWIMPS, Toaka"
+    },
+    {
+      "arquivo": "Sweet but Psycho_spotdown.org.mp3",
+      "titulo": "Sweet but Psycho",
+      "artista": "Ava Max"
+    },
+    {
+      "arquivo": "Taste_spotdown.org.mp3",
+      "titulo": "Taste",
+      "artista": "Sabrina Carpenter"
+    },
+    {
+      "arquivo": "Tattoo_spotdown.org.mp3",
+      "titulo": "Tattoo",
+      "artista": "Loreen"
+    },
+    {
+      "arquivo": "Teeth_spotdown.org (1).mp3",
+      "titulo": "Teeth",
+      "artista": "5 Seconds of Summer"
+    },
+    {
+      "arquivo": "Tentação_spotdown.org.mp3",
+      "titulo": "Tentação",
+      "artista": "Carol Biazin, Luísa Sonza"
+    },
+    {
+      "arquivo": "THE FUNK OF OPHELIA_spotdown.org.mp3",
+      "titulo": "THE FUNK OF OPHELIA",
+      "artista": "NELLIN"
+    },
+    {
+      "arquivo": "Home_spotdown.org.mp3",
+      "titulo": "Home",
+      "artista": "Gabrielle Aplin"
+    },
+    {
+      "arquivo": "HOUNDSOFHELL_spotdown.org.mp3",
+      "titulo": "HOUNDSOFHELL",
+      "artista": "Mad Tsai"
+    },
+    {
+      "arquivo": "HYDRA_spotdown.org (1).mp3",
+      "titulo": "HYDRA",
+      "artista": "MYTH & ROID"
+    },
+    {
+      "arquivo": "Idiota_spotdown.org.mp3",
+      "titulo": "Idiota",
+      "artista": "Jão"
+    },
+    {
+      "arquivo": "IGNITE_spotdown.org.mp3",
+      "titulo": "IGNITE",
+      "artista": "Eir Aoi"
+    },
+    {
+      "arquivo": "Imaturo_spotdown.org.mp3",
+      "titulo": "Imaturo",
+      "artista": "Jão"
+    },
+    {
+      "arquivo": "Immortals_spotdown.org.mp3",
+      "titulo": "Immortals",
+      "artista": "Fall Out Boy"
+    },
+    {
+      "arquivo": "Infinity_spotdown.org.mp3",
+      "titulo": "Infinity",
+      "artista": "Jaymes Young"
+    },
+    {
+      "arquivo": "JINGO JUNGLE_spotdown.org.mp3",
+      "titulo": "JINGO JUNGLE",
+      "artista": "MYTH & ROID"
+    },
+    {
+      "arquivo": "Kaikai Kitan_spotdown.org.mp3",
+      "titulo": "Kaikai Kitan",
+      "artista": "Eve"
+    },
+    {
+      "arquivo": "Kings & Queens_spotdown.org.mp3",
+      "titulo": "Kings & Queens",
+      "artista": "Ava Max"
+    },
+    {
+      "arquivo": "Kyouran Hey Kids!!_spotdown.org.mp3",
+      "titulo": "Kyouran Hey Kids!!",
+      "artista": "THE ORAL CIGARETTES"
+    },
+    {
+      "arquivo": "L.L.L._spotdown.org (1).mp3",
+      "titulo": "L.L.L.",
+      "artista": "MYTH & ROID"
+    },
+    {
+      "arquivo": "Let Me Hear_spotdown.org.mp3",
+      "titulo": "Let Me Hear",
+      "artista": "Fear, and Loathing in Las Vegas"
+    },
+    {
+      "arquivo": "Light My Fire_spotdown.org.mp3",
+      "titulo": "Light My Fire",
+      "artista": "KOTOKO"
+    },
+    {
+      "arquivo": "Lovesick_spotdown.org.mp3",
+      "titulo": "Lovesick",
+      "artista": "Alan Walker, Sophie Simmons"
+    },
+    {
+      "arquivo": "Ma Meilleure Ennemie (from the series Arcane League of Legends)_spotdown.org.mp3",
+      "titulo": "Ma Meilleure Ennemie",
+      "artista": "Stromae, Pomme"
+    },
+    {
+      "arquivo": "make you mine_spotdown.org.mp3",
+      "titulo": "make you mine",
+      "artista": "Madison Beer"
+    },
+    {
+      "arquivo": "MASAYUME CHASING_spotdown.org.mp3",
+      "titulo": "MASAYUME CHASING",
+      "artista": "BoA"
+    },
+    {
+      "arquivo": "Meu endereço_spotdown.org.mp3",
+      "titulo": "Meu endereço",
+      "artista": "Ana Laura Lopes"
+    },
+    {
+      "arquivo": "meu romance_spotdown.org.mp3",
+      "titulo": "meu romance",
+      "artista": "TINN"
+    },
+    {
+      "arquivo": "crossing field_spotdown.org.mp3",
+      "titulo": "crossing field",
+      "artista": "LiSA"
+    },
+    {
+      "arquivo": "Dancing With Your Ghost_spotdown.org.mp3",
+      "titulo": "Dancing With Your Ghost",
+      "artista": "Sasha Alex Sloan"
+    },
+    {
+      "arquivo": "DARK ARIA _LV2__spotdown.org (1).mp3",
+      "titulo": "DARK ARIA <LV2>",
+      "artista": "SawanoHiroyuki[nZk]"
+    },
+    {
+      "arquivo": "Deve ser horrível dormir sem mim_spotdown.org.mp3",
+      "titulo": "Deve ser horrível dormir sem mim",
+      "artista": "Manu Gavassi, Gloria Groove"
+    },
+    {
+      "arquivo": "Diaba_spotdown.org.mp3",
+      "titulo": "Diaba",
+      "artista": "Urias"
+    },
+    {
+      "arquivo": "Dilemas da vida moderna_spotdown.org.mp3",
+      "titulo": "Dilemas da vida moderna",
+      "artista": "Carol Biazin"
+    },
+    {
+      "arquivo": "Dona de mim_spotdown.org.mp3",
+      "titulo": "Dona de mim",
+      "artista": "IZA"
+    },
+    {
+      "arquivo": "endless voyage_spotdown.org.mp3",
+      "titulo": "endless voyage",
+      "artista": "fripSide"
+    },
+    {
+      "arquivo": "everything i wanted_spotdown.org.mp3",
+      "titulo": "everything i wanted",
+      "artista": "Billie Eilish"
+    },
+    {
+      "arquivo": "Fantasma_spotdown.org.mp3",
+      "titulo": "Fantasma",
+      "artista": "Ana Laura Lopes"
+    },
+    {
+      "arquivo": "Feel Like A Monster_spotdown.org.mp3",
+      "titulo": "Feel Like A Monster",
+      "artista": "John Michael Howell"
+    },
+    {
+      "arquivo": "Fight Together （第493話〜516話 OP)_spotdown.org.mp3",
+      "titulo": "Fight Together",
+      "artista": "Mami"
+    },
+    {
+      "arquivo": "found & lost_spotdown.org.mp3",
+      "titulo": "found & lost",
+      "artista": "Survive Said The Prophet"
+    },
+    {
+      "arquivo": "Fractions_spotdown.org.mp3",
+      "titulo": "Fractions",
+      "artista": "Juniper Vale"
+    },
+    {
+      "arquivo": "GLASSY SKY_spotdown.org.mp3",
+      "titulo": "GLASSY SKY",
+      "artista": "Yutaka Yamada"
+    },
+    {
+      "arquivo": "GO CRY GO_spotdown.org (1).mp3",
+      "titulo": "GO CRY GO",
+      "artista": "OxT"
+    },
+    {
+      "arquivo": "Golden_spotdown.org.mp3",
+      "titulo": "Golden",
+      "artista": "HUNTR; X, EJAE"
+    },
+    {
+      "arquivo": "Goya No Machiawase_spotdown.org.mp3",
+      "titulo": "Goya No Machiawase",
+      "artista": "Hello Sleepwalkers"
+    },
+    {
+      "arquivo": "Here_spotdown.org.mp3",
+      "titulo": "Here",
+      "artista": "JUNNA"
+    },
+    {
+      "arquivo": "Hex Girl_spotdown.org.mp3",
+      "titulo": "Hex Girl",
+      "artista": "Moon Sisters"
+    },
+    {
+      "arquivo": "0 (zero) -English version-_spotdown.org.mp3",
+      "titulo": "0 (zero)",
+      "artista": "LMYK"
+    },
+    {
+      "arquivo": "01_spotdown.org.mp3",
+      "titulo": "01",
+      "artista": "QUEEN BEE"
+    },
+    {
+      "arquivo": "10 Things I Hate About You_spotdown.org.mp3",
+      "titulo": "10 Things I Hate About You",
+      "artista": "Leah Kate"
+    },
+    {
+      "arquivo": "15 MINUTES_spotdown.org.mp3",
+      "titulo": "15 MINUTES",
+      "artista": "Madison Beer"
+    },
+    {
+      "arquivo": "again_spotdown.org.mp3",
+      "titulo": "again",
+      "artista": "YUI"
+    },
+    {
+      "arquivo": "Alinhamento Milenar_spotdown.org.mp3",
+      "titulo": "Alinhamento Milenar",
+      "artista": "Jão"
+    },
+    {
+      "arquivo": "Amigos nunca devem_spotdown.org.mp3",
+      "titulo": "Amigos nunca devem",
+      "artista": "Ana Laura Lopes"
+    },
+    {
+      "arquivo": "AMOR PIRATA_spotdown.org.mp3",
+      "titulo": "AMOR PIRATA",
+      "artista": "Jão"
+    },
+    {
+      "arquivo": "Amor Traumatizado_spotdown.org.mp3",
+      "titulo": "Amor Traumatizado",
+      "artista": "Carol Biazin"
+    },
+    {
+      "arquivo": "asphyxia_spotdown.org (1).mp3",
+      "titulo": "asphyxia",
+      "artista": "Co shu Nie"
+    },
+    {
+      "arquivo": "Avid_spotdown.org (1).mp3",
+      "titulo": "Avid",
+      "artista": "SawanoHiroyuki[nZk]"
+    },
+    {
+      "arquivo": "Bad Habits_spotdown.org.mp3",
+      "titulo": "Bad Habits",
+      "artista": "Ed Sheeran"
+    },
+    {
+      "arquivo": "Bateria Social_spotdown.org.mp3",
+      "titulo": "Bateria Social",
+      "artista": "Lou Garcia"
+    },
+    {
+      "arquivo": "Boys Don't Cry_spotdown.org.mp3",
+      "titulo": "Boys Don't Cry",
+      "artista": "Anitta"
+    },
+    {
+      "arquivo": "Break My Heart_spotdown.org.mp3",
+      "titulo": "Break My Heart",
+      "artista": "Dua Lipa"
+    },
+    {
+      "arquivo": "cardigan_spotdown.org.mp3",
+      "titulo": "cardigan",
+      "artista": "Taylor Swift"
+    },
+    {
+      "arquivo": "CHIHIRO_spotdown.org.mp3",
+      "titulo": "CHIHIRO",
+      "artista": "Billie Eilish"
+    },
+    {
+      "arquivo": "Clattanoia_spotdown.org.mp3",
+      "titulo": "CLATTANOIA",
+      "artista": "OxT"
+    },
+    {
+      "arquivo": "COLORS_spotdown.org.mp3",
+      "titulo": "COLORS",
+      "artista": "FLOW"
+    },
+    {
+      "arquivo": "THE LONELIEST_spotdown.org.mp3",
+      "titulo": "THE LONELIEST",
+      "artista": "Måneskin"
+    },
+    {
+      "arquivo": "This Game feat. IA (dj-Jo Remix) [Full]_spotdown.org.mp3",
+      "titulo": "This Game feat. IA (dj-Jo Remix)",
+      "artista": "dj-Jo"
+    },
+    {
+      "arquivo": "THIS GAME_spotdown.org.mp3",
+      "titulo": "This Game",
+      "artista": "Konomi Suzuki"
+    },
+    {
+      "arquivo": "TRUE_spotdown.org.mp3",
+      "titulo": "TRUE",
+      "artista": "YOARI"
+    },
+    {
+      "arquivo": "Twilight_spotdown.org.mp3",
+      "titulo": "Twilight",
+      "artista": "Vanguard Sound"
+    },
+    {
+      "arquivo": "U (From _Belle_ Soundtrack) - English Version_spotdown.org.mp3",
+      "titulo": "U (English Version)",
+      "artista": "LMYK"
+    },
+    {
+      "arquivo": "Unity_spotdown.org.mp3",
+      "titulo": "Unity",
+      "artista": "LiSA"
+    },
+    {
+      "arquivo": "unlasting_spotdown.org.mp3",
+      "titulo": "unlasting",
+      "artista": "LiSA"
+    },
+    {
+      "arquivo": "VIP _-__spotdown.org.mp3",
+      "titulo": "VIP",
+      "artista": "Luísa Sonza, 6LACK"
+    },
+    {
+      "arquivo": "VSF_spotdown.org.mp3",
+      "titulo": "VSF",
+      "artista": "Jão"
+    },
+    {
+      "arquivo": "When I'm Gone (with Katy Perry)_spotdown.org.mp3",
+      "titulo": "When I’m Gone",
+      "artista": "Alesso, Katy Perry"
+    },
+    {
+      "arquivo": "When The Moon Descends_spotdown.org.mp3",
+      "titulo": "When The Moon Descends",
+      "artista": "Prod.Dex"
+    },
+    {
+      "arquivo": "X.U._spotdown.org.mp3",
+      "titulo": "X.U.",
+      "artista": "SawanoHiroyuki[nZk]"
+    },
+    {
+      "arquivo": "yes baby_spotdown.org.mp3",
+      "titulo": "yes baby",
+      "artista": "Madison Beer"
+    },
+    {
+      "arquivo": "βιοζ-δ_spotdown.org.mp3",
+      "titulo": "Bioζ-δ",
+      "artista": "Sawano Hiroyuki"
+    },
+    {
+      "arquivo": "カワキヲアメク_spotdown.org.mp3",
+      "titulo": "カワキラアメリカ",
+      "artista": "美波"
+    },
+    {
+      "arquivo": "ホタルノヒカリ_spotdown.org.mp3",
+      "titulo": "木久ルヒカリ",
+      "artista": "Ikimonogakari"
+    },
+    {
+      "arquivo": "ラヴァーズ_spotdown.org.mp3",
+      "titulo": "ラヴァーズ",
+      "artista": "7!!"
+    },
+    {
+      "arquivo": "乱舞のメロディ_spotdown.org.mp3",
+      "titulo": "乱舞のメロディ",
+      "artista": "SID"
+    },
+    {
+      "arquivo": "光るなら_spotdown.org.mp3",
+      "titulo": "光るなぢ",
+      "artista": "Goose house"
+    },
+    {
+      "arquivo": "終末のラブソング_spotdown.org.mp3",
+      "titulo": "終末のラブソング",
+      "artista": "Nana Mizuki"
+    },
+    {
+      "arquivo": "Cross Ange -Hikari no Uta legendado - Music maniacs (youtube).mp3",
+      "titulo": "Hikari no Uta (legendado)",
+      "artista": "Cross Ange (Music maniacs)"
+    },
+    {
+      "arquivo": "Cross Ange Ange & Salako (El Ragna) AMV - Random Chronicle (youtube).mp3",
+      "titulo": "Ange & Salako (El Ragna) AMV",
+      "artista": "Cross Ange (Random Chronicle)"
+    },
+    {
+      "arquivo": "SOUL EATER - PAPER MOON - VERSÃO COMPLETA ( FULL VERSION) - Ricardo Júnior Feat. Renato Garcia - RicardoJuniorSings (youtube).mp3",
+      "titulo": "Paper Moon (versão completa, cover)",
+      "artista": "Ricardo Júnior feat. Renato Garcia"
+    },
+    {
+      "arquivo": "Shaman King - Ele vai vencer (Over soul) - Abertura brasileira completa - Tsb anime (youtube).mp3",
+      "titulo": "Ele vai vencer (Over Soul) - abertura BR completa",
+      "artista": "Shaman King (Tsb anime)"
+    },
+    {
+      "arquivo": "Shaman King Encerramento 2 Dublado - Otaku Brazilian (youtube).mp3",
+      "titulo": "Encerramento 2 (dublado)",
+      "artista": "Shaman King (Otaku Brazilian)"
+    },
+    {
+      "arquivo": "Sorriso Contagiante - yuyu20 (youtube).mp3",
+      "titulo": "Sorriso Contagiante",
+      "artista": "yuyu20"
+    }
+  ],
+  "listas": {
+    "Pop Nacional": [
+      "MODO TURBO_spotdown.org.mp3",
+      "nada contra (ciúme)_spotdown.org.mp3",
+      "Não Fosse Tão Tarde (Speed)_spotdown.org.mp3",
+      "Não Te Amo_spotdown.org.mp3",
+      "penhasco._spotdown.org.mp3",
+      "Pupila_spotdown.org.mp3",
+      "Sagrado Profano_spotdown.org.mp3",
+      "Santo_spotdown.org.mp3",
+      "Sem Filtro_spotdown.org.mp3",
+      "Sou Musa do Verão_spotdown.org.mp3",
+      "Tentação_spotdown.org.mp3",
+      "Idiota_spotdown.org.mp3",
+      "Imaturo_spotdown.org.mp3",
+      "Deve ser horrível dormir sem mim_spotdown.org.mp3",
+      "Diaba_spotdown.org.mp3",
+      "Dilemas da vida moderna_spotdown.org.mp3",
+      "Dona de mim_spotdown.org.mp3",
+      "Fantasma_spotdown.org.mp3",
+      "Meu endereço_spotdown.org.mp3",
+      "Alinhamento Milenar_spotdown.org.mp3",
+      "Amigos nunca devem_spotdown.org.mp3",
+      "AMOR PIRATA_spotdown.org.mp3",
+      "Amor Traumatizado_spotdown.org.mp3",
+      "Bateria Social_spotdown.org.mp3",
+      "Boys Don't Cry_spotdown.org.mp3",
+      "VIP _-__spotdown.org.mp3",
+      "VSF_spotdown.org.mp3"
+    ],
+    "Anime/J-Rock": [
+      "MUKANJYO_spotdown.org.mp3",
+      "New Genesis_spotdown.org.mp3",
+      "PAPERMOON_spotdown.org.mp3",
+      "ReawakeR (feat. Felix of Stray Kids)_spotdown.org.mp3",
+      "Release My Soul_spotdown.org.mp3",
+      "resonance_spotdown.org.mp3",
+      "RISE_spotdown.org.mp3",
+      "Rising Hope_spotdown.org.mp3",
+      "Rolling star_spotdown.org.mp3",
+      "SPECIALZ_spotdown.org.mp3",
+      "STRIKE BACK_spotdown.org.mp3",
+      "STYX HELIX_spotdown.org (1).mp3",
+      "HYDRA_spotdown.org (1).mp3",
+      "IGNITE_spotdown.org.mp3",
+      "Immortals_spotdown.org.mp3",
+      "JINGO JUNGLE_spotdown.org.mp3",
+      "Kaikai Kitan_spotdown.org.mp3",
+      "Kyouran Hey Kids!!_spotdown.org.mp3",
+      "L.L.L._spotdown.org (1).mp3",
+      "Let Me Hear_spotdown.org.mp3",
+      "Light My Fire_spotdown.org.mp3",
+      "MASAYUME CHASING_spotdown.org.mp3",
+      "crossing field_spotdown.org.mp3",
+      "DARK ARIA _LV2__spotdown.org (1).mp3",
+      "endless voyage_spotdown.org.mp3",
+      "Fight Together （第493話〜516話 OP)_spotdown.org.mp3",
+      "found & lost_spotdown.org.mp3",
+      "GLASSY SKY_spotdown.org.mp3",
+      "GO CRY GO_spotdown.org (1).mp3",
+      "Goya No Machiawase_spotdown.org.mp3",
+      "Here_spotdown.org.mp3",
+      "Hex Girl_spotdown.org.mp3",
+      "01_spotdown.org.mp3",
+      "again_spotdown.org.mp3",
+      "asphyxia_spotdown.org (1).mp3",
+      "Avid_spotdown.org (1).mp3",
+      "Clattanoia_spotdown.org.mp3",
+      "COLORS_spotdown.org.mp3",
+      "THIS GAME_spotdown.org.mp3",
+      "TRUE_spotdown.org.mp3",
+      "Twilight_spotdown.org.mp3",
+      "U (From _Belle_ Soundtrack) - English Version_spotdown.org.mp3",
+      "Unity_spotdown.org.mp3",
+      "unlasting_spotdown.org.mp3",
+      "X.U._spotdown.org.mp3",
+      "βιοζ-δ_spotdown.org.mp3",
+      "カワキヲアメク_spotdown.org.mp3",
+      "ホタルノヒカリ_spotdown.org.mp3",
+      "ラヴァーズ_spotdown.org.mp3",
+      "乱舞のメロディ_spotdown.org.mp3",
+      "光るなら_spotdown.org.mp3",
+      "終末のラブソング_spotdown.org.mp3"
+    ],
+    "Pop Internacional": [
+      "Overdrive (feat. Norma Jean Martine)_spotdown.org.mp3",
+      "Physical_spotdown.org.mp3",
+      "Radio_spotdown.org.mp3",
+      "Requiem_spotdown.org.mp3",
+      "Rush_spotdown.org.mp3",
+      "Sharp Objects_spotdown.org.mp3",
+      "Shivers_spotdown.org.mp3",
+      "STAY (with Justin Bieber)_spotdown.org.mp3",
+      "Supernova Love_spotdown.org.mp3",
+      "Sweet but Psycho_spotdown.org.mp3",
+      "Taste_spotdown.org.mp3",
+      "Tattoo_spotdown.org.mp3",
+      "Teeth_spotdown.org (1).mp3",
+      "Home_spotdown.org.mp3",
+      "HOUNDSOFHELL_spotdown.org.mp3",
+      "Infinity_spotdown.org.mp3",
+      "Kings & Queens_spotdown.org.mp3",
+      "Lovesick_spotdown.org.mp3",
+      "Ma Meilleure Ennemie (from the series Arcane League of Legends)_spotdown.org.mp3",
+      "make you mine_spotdown.org.mp3",
+      "meu romance_spotdown.org.mp3",
+      "Dancing With Your Ghost_spotdown.org.mp3",
+      "everything i wanted_spotdown.org.mp3",
+      "Feel Like A Monster_spotdown.org.mp3",
+      "Fractions_spotdown.org.mp3",
+      "Golden_spotdown.org.mp3",
+      "0 (zero) -English version-_spotdown.org.mp3",
+      "10 Things I Hate About You_spotdown.org.mp3",
+      "15 MINUTES_spotdown.org.mp3",
+      "Bad Habits_spotdown.org.mp3",
+      "Break My Heart_spotdown.org.mp3",
+      "cardigan_spotdown.org.mp3",
+      "CHIHIRO_spotdown.org.mp3",
+      "THE LONELIEST_spotdown.org.mp3",
+      "This Game feat. IA (dj-Jo Remix) [Full]_spotdown.org.mp3",
+      "When I'm Gone (with Katy Perry)_spotdown.org.mp3",
+      "When The Moon Descends_spotdown.org.mp3",
+      "yes baby_spotdown.org.mp3"
+    ],
+    "Luísa Sonza": [
+      "MODO TURBO_spotdown.org.mp3",
+      "penhasco._spotdown.org.mp3",
+      "Sagrado Profano_spotdown.org.mp3",
+      "Sou Musa do Verão_spotdown.org.mp3",
+      "Tentação_spotdown.org.mp3",
+      "VIP _-__spotdown.org.mp3"
+    ],
+    "Jão": [
+      "Não Te Amo_spotdown.org.mp3",
+      "Santo_spotdown.org.mp3",
+      "Idiota_spotdown.org.mp3",
+      "Imaturo_spotdown.org.mp3",
+      "Alinhamento Milenar_spotdown.org.mp3",
+      "AMOR PIRATA_spotdown.org.mp3",
+      "VSF_spotdown.org.mp3"
+    ],
+    "LiSA": [
+      "ReawakeR (feat. Felix of Stray Kids)_spotdown.org.mp3",
+      "Rising Hope_spotdown.org.mp3",
+      "crossing field_spotdown.org.mp3",
+      "Unity_spotdown.org.mp3",
+      "unlasting_spotdown.org.mp3"
+    ],
+    "SawanoHiroyuki": [
+      "Release My Soul_spotdown.org.mp3",
+      "DARK ARIA _LV2__spotdown.org (1).mp3",
+      "Avid_spotdown.org (1).mp3",
+      "X.U._spotdown.org.mp3",
+      "βιοζ-δ_spotdown.org.mp3"
+    ],
+    "MYTH & ROID": [
+      "STYX HELIX_spotdown.org (1).mp3",
+      "HYDRA_spotdown.org (1).mp3",
+      "JINGO JUNGLE_spotdown.org.mp3",
+      "L.L.L._spotdown.org (1).mp3"
+    ],
+    "Aberturas & Encerramentos": [
+      "Cross Ange -Hikari no Uta legendado - Music maniacs (youtube).mp3",
+      "Cross Ange Ange & Salako (El Ragna) AMV - Random Chronicle (youtube).mp3",
+      "SOUL EATER - PAPER MOON - VERSÃO COMPLETA ( FULL VERSION) - Ricardo Júnior Feat. Renato Garcia - RicardoJuniorSings (youtube).mp3",
+      "Shaman King - Ele vai vencer (Over soul) - Abertura brasileira completa - Tsb anime (youtube).mp3",
+      "Shaman King Encerramento 2 Dublado - Otaku Brazilian (youtube).mp3",
+      "Sorriso Contagiante - yuyu20 (youtube).mp3"
+    ],
+    "Animadas": [
+      "MODO TURBO_spotdown.org.mp3",
+      "Physical_spotdown.org.mp3",
+      "STAY (with Justin Bieber)_spotdown.org.mp3",
+      "Sweet but Psycho_spotdown.org.mp3",
+      "Kings & Queens_spotdown.org.mp3",
+      "Supernova Love_spotdown.org.mp3",
+      "Break My Heart_spotdown.org.mp3",
+      "Bad Habits_spotdown.org.mp3",
+      "VIP _-__spotdown.org.mp3",
+      "Golden_spotdown.org.mp3",
+      "Boys Don't Cry_spotdown.org.mp3",
+      "15 MINUTES_spotdown.org.mp3",
+      "yes baby_spotdown.org.mp3",
+      "THIS GAME_spotdown.org.mp3",
+      "SPECIALZ_spotdown.org.mp3",
+      "Kyouran Hey Kids!!_spotdown.org.mp3",
+      "STRIKE BACK_spotdown.org.mp3",
+      "RISE_spotdown.org.mp3",
+      "MASAYUME CHASING_spotdown.org.mp3",
+      "Rolling star_spotdown.org.mp3"
+    ]
+  }
+}
