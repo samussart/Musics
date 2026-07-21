@@ -125,7 +125,7 @@
     { "arquivo": "Shaman King - Ele vai vencer (Over soul) - Abertura brasileira completa - Tsb anime (youtube).mp3", "titulo": "Ele vai vencer (Over Soul)", "artista": "Shaman King (Tsb anime)", "idioma": "português", "genero": "Abertura", "humor": "animada", "origem": "anime" },
     { "arquivo": "Shaman King Encerramento 2 Dublado - Otaku Brazilian (youtube).mp3", "titulo": "Encerramento 2 (dublado)", "artista": "Shaman King (Otaku Brazilian)", "idioma": "português", "genero": "Encerramento", "humor": "triste", "origem": "anime" },
     { "arquivo": "Sorriso Contagiante - yuyu20 (youtube).mp3", "titulo": "Sorriso Contagiante", "artista": "yuyu20", "idioma": "português", "genero": "Pop", "humor": "animada", "origem": "nacional" },
-    { "arquivo": "SHAMAN KING ENCERRAMENTO 2 Sônia Santhelmo - DÉCOㅤ (youtube).mp3", "titulo": "Shaman King Encerramento 2 Sônia Santhelmo", "artista": "Sônia Santhelmo", "idioma": "português", "genero": "Encerramento", "humor": "triste", "origem": "anime" },
+    { "arquivo": "Shaman King Encerramento 2 Sonia Santhelmo.mp3", "titulo": "Shaman King Encerramento 2 Sônia Santhelmo", "artista": "Sônia Santhelmo", "idioma": "português", "genero": "Encerramento", "humor": "triste", "origem": "anime" },
     { "arquivo": "INSANITY LOVE_spotdown.org.mp3", "titulo": "INSANITY LOVE", "artista": "Desconhecido", "idioma": "inglês", "genero": "Pop", "humor": "animada", "origem": "internacional" }
   ],
   "listas": {
@@ -160,7 +160,7 @@
       "Shaman King - Ele vai vencer (Over soul) - Abertura brasileira completa - Tsb anime (youtube).mp3",
       "Shaman King Encerramento 2 Dublado - Otaku Brazilian (youtube).mp3",
       "Sorriso Contagiante - yuyu20 (youtube).mp3",
-      "SHAMAN KING ENCERRAMENTO 2 Sônia Santhelmo - DÉCOㅤ (youtube).mp3"
+      "Shaman King Encerramento 2 Sonia Santhelmo.mp3"
     ],
     "🇺🇸 Inglês": [
       "Overdrive (feat. Norma Jean Martine)_spotdown.org.mp3",
@@ -314,7 +314,7 @@
       "SOUL EATER - PAPER MOON - VERSÃO COMPLETA ( FULL VERSION) - Ricardo Júnior Feat. Renato Garcia - RicardoJuniorSings (youtube).mp3",
       "Shaman King - Ele vai vencer (Over soul) - Abertura brasileira completa - Tsb anime (youtube).mp3",
       "Shaman King Encerramento 2 Dublado - Otaku Brazilian (youtube).mp3",
-      "SHAMAN KING ENCERRAMENTO 2 Sônia Santhelmo - DÉCOㅤ (youtube).mp3"
+      "Shaman King Encerramento 2 Sonia Santhelmo.mp3"
     ],
     "🌍 Pop Internacional": [
       "Overdrive (feat. Norma Jean Martine)_spotdown.org.mp3",
@@ -442,7 +442,7 @@
       "STYX HELIX_spotdown.org (1).mp3",
       "unlasting_spotdown.org.mp3",
       "TRUE_spotdown.org.mp3",
-      "SHAMAN KING ENCERRAMENTO 2 Sônia Santhelmo - DÉCOㅤ (youtube).mp3"
+      "Shaman King Encerramento 2 Sonia Santhelmo.mp3"
     ],
     "🌸 Relaxar": [
       "STAY (with Justin Bieber)_spotdown.org.mp3",
@@ -480,7 +480,7 @@
       "unlasting_spotdown.org.mp3",
       "X.U._spotdown.org.mp3",
       "DARK ARIA _LV2__spotdown.org (1).mp3",
-      "SHAMAN KING ENCERRAMENTO 2 Sônia Santhelmo - DÉCOㅤ (youtube).mp3"
+      "Shaman King Encerramento 2 Sonia Santhelmo.mp3"
     ],
     "❤️ Românticas": [
       "Pupila_spotdown.org.mp3",
@@ -496,7 +496,7 @@
       "GLASSY SKY_spotdown.org.mp3",
       "0 (zero) -English version-_spotdown.org.mp3",
       "Unity_spotdown.org.mp3",
-      "SHAMAN KING ENCERRAMENTO 2 Sônia Santhelmo - DÉCOㅤ (youtube).mp3",
+      "Shaman King Encerramento 2 Sonia Santhelmo.mp3",
       "INSANITY LOVE_spotdown.org.mp3"
     ]
   }
